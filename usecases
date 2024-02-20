@@ -1,0 +1,26 @@
+Performance Under Strain
+
+Network Conditions: Simulate various network conditions (poor 3G, fluctuating Wi-Fi, interruptions) to understand how your app behaves under less than ideal scenarios. Network related issues are a major user pain point on mobile devices.
+Battery Usage: Monitor how your app impacts battery life. Excessive drain will lead to poor user experience and uninstallations. Profiling tools are your friend here.
+Resource Consumption: Ensure your app doesn't overuse memory or CPU, leading to sluggish performance or crashes on devices with varying hardware capabilities.
+Device & OS Fragmentation
+
+Screen Sizes & Resolutions: Test on a range of devices to guarantee your UI adapts correctly. This includes orientations (portrait vs. landscape).
+OS Versions: Android and iOS have varying degrees of fragmentation. Ensure your app functions as expected on the most popular OS versions, including recent minor updates.
+Device Specific Quirks (Optional): If resources permit, consider testing on a few devices known for unique behaviors (camera quirks, custom manufacturer overlays on Android, etc.).
+Usability on Mobile
+
+Touch Interactions: Verify that touch targets are sufficiently sized, gestures work intuitively, and scrolling is smooth.
+Interruptions: Test how your app recovers from scenarios like incoming phone calls, switching between apps, or going in and out of airplane mode. Data and session state preservation are key.
+Offline Capabilities: Can parts of your app function offline (if applicable)? Ensure graceful handling and data synchronization when the network returns.
+Platform-Specific Nuances
+
+Permissions: Understand how your app interacts with Android and iOS permission models (location, camera, storage). Test the experience when a user denies critical permissions.
+Background Behavior: Ensure your app behaves as expected with iOS and Android rules around running in the background (data updates, notifications).
+Deep Linking: If your app integrates with other apps via deep links, thoroughly test these on both platforms.
+Testing Tools & Strategies
+
+Emulators/Simulators and Real Devices: A mix of both is essential. Cloud device providers can help access a broader range of real devices.
+Appium: Popular framework for cross-platform automated mobile testing if that aligns with your strategy.
+Network Throttling Tools: Purposefully restrict bandwidth to simulate real-world conditions.
+Instrumentation: Use profiling tools to measure CPU, memory, and battery consumption during app use.
